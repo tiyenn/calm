@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html>
+    
+    <head>
+    <title>website</title>
+        
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/buzz/1.2.0/buzz.min.js"></script>
+        
+        <style>
+            .row{
+                width:720px;
+                margin: 10px auto 10px auto ;
+            }
+            .image-container {
+                display: table-cell;
+                vertical-align: middle;
+                padding:20px;
+            }
+        </style>
+    </head>
+
+    <body>
+
+        <div class="row">
+            <div class="image-container"><img id="img1" 
+                src="img/rocks.png" height="200" width="200"
+                onmouseover="this.src='img/rocksf.png' ;"
+                onmouseout="this.src='img/rocks.png' ;"
+                />
+            </div>
+            <div class="image-container"><img id="img2" 
+                src="img/lotus.png" height="200" width="200"
+                onmouseover="this.src='img/lotusf.png' ;"
+                onmouseout="this.src='img/lotus.png' ;"
+                />
+            </div>
+            <div class="image-container"><img id="img3" 
+                src="img/meditating.png" height="200" width="200"
+                onmouseover="this.src='img/meditatingf.png' ;"
+                onmouseout="this.src='img/meditating.png' ;"
+                />
+            </div>
+        </div>
+
+        <div class="row">
+            <div class="image-container"><img id="img4" 
+                src="img/together.png" height="200" width="200"
+                onmouseover="this.src='img/togetherf.png' ;"
+                onmouseout="this.src='img/together.png' ;"
+                />
+            </div>
+            <div class="image-container"><img id="img5" 
+                src="img/face.png" height="200" width="200"
+                onmouseover="this.src='img/facef.png' ;"
+                onmouseout="this.src='img/face.png' ;"
+                />
+            </div>
+            <div class="image-container"><img id="img6" 
+                src="img/music.png" height="200" width="200"
+                onmouseover="this.src='img/musicf.png' ;"
+                onmouseout="this.src='img/music.png' ;"
+                />
+            </div>
+            </div>
+
+        <div class="row">
+            <div class="image-container"><img id="img7" 
+                src="img/wind.png" height="200" width="200"
+                onmouseover="this.src='img/windf.png' ;"
+                onmouseout="this.src='img/wind.png' ;"
+                />
+            </div>
+            <div class="image-container"><img id="img8" 
+                src="img/bird.png" height="200" width="200"
+                onmouseover="this.src='img/birdf.png' ;"
+                onmouseout="this.src='img/bird.png' ;"
+                />
+            </div>
+            <div class="image-container"><img id="img9" 
+                src="img/peace.png" height="200" width="200"
+                onmouseover="this.src='img/peacef.png' ;"
+                onmouseout="this.src='img/peace.png' ;"
+                />
+            </div>
+        </div>
+        
+        <script>
+            var sound1 = new buzz.sound("sound/pebble.wav");
+            var sound2 = new buzz.sound("sound/waterr.wav");
+            var sound3 = new buzz.sound("sound/wind.wav");
+            var sound4 = new buzz.sound("sound/chimes.wav");
+            var sound5 = new buzz.sound("sound/ding.wav");
+            var sound6 = new buzz.sound("sound/bells.wav");
+            var sound7 = new buzz.sound("sound/chimess.wav");
+            var sound8 = new buzz.sound("sound/birdchirp.mp3");
+            var sound9 = new buzz.sound("sound/ding.wav");
+     
+            window.onload = function() {
+                document.getElementById('img1').addEventListener('click', function () {sound1.play(); });  
+                document.getElementById('img2').addEventListener('click', function () {sound2.play(); });
+                document.getElementById('img3').addEventListener('click', function () {sound3.play(); });
+                document.getElementById('img4').addEventListener('click', function () {sound4.play(); });
+                document.getElementById('img5').addEventListener('click', function () {sound5.play(); }); 
+                document.getElementById('img6').addEventListener('click', function () {sound6.play(); }); 
+                document.getElementById('img7').addEventListener('click', function () {sound7.play(); }); 
+                document.getElementById('img8').addEventListener('click', function () {sound8.play(); }); 
+                document.getElementById('img9').addEventListener('click', function () {sound9.play(); });
+            }  
+        </script>   
+        
+    </body>
+    
+</html>
